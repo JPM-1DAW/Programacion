@@ -13,7 +13,7 @@ public class Ej8 {
         radio = sc.nextInt();
         System.out.println("Indique la altura del cono: ");
         altura = sc.nextInt();
-        volumen = (1 / 3) * Math.PI * Math.pow(radio, 2) * altura;
+        volumen = ((1.0 / 3.0) * Math.PI * Math.pow(radio, 2) * altura);
         System.out.println("El volumen del cono es de: " + volumen);
     }
 }
