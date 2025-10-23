@@ -5,8 +5,7 @@ import java.util.Scanner;
 
 public class EJ19 {
     public static void main(String[] args) {
-        int meses;
-        double cant, inte, capital;
+        double cant, inte, meses, capital;
         Scanner sc = new Scanner(System.in);
         System.out.print("Cantidad a invertir: ");
         cant = sc.nextInt();
