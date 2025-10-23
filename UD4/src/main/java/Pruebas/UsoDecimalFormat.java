@@ -11,7 +11,7 @@ public class UsoDecimalFormat {
         System.out.println(df.format(10.4));
 
         df = new DecimalFormat("###.##%");
-        System.out.println(df.format(0.3444));
+        System.out.println("Texto de ejemplo " + df.format(0.3444));
 
         double a = 1.2345;
         double b = 1.2356;
