@@ -13,7 +13,7 @@ public class EJ19 {
         inte = sc.nextInt();
         System.out.print("Duración de la inversion en meses: ");
         meses = sc.nextInt();
-        capital = cant + ((meses / 12) * inte);
+        capital = ;
         DecimalFormat df = new DecimalFormat("##.##");
         System.out.println("Capital final: " + df.format(capital));
     }
