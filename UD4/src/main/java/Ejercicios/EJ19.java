@@ -13,8 +13,8 @@ public class EJ19 {
         inte = sc.nextInt();
         System.out.print("Duración de la inversion en meses: ");
         meses = sc.nextInt();
-        capital = ;
-        DecimalFormat df = new DecimalFormat("##.##");
+        capital = cant * Math.pow(inte/100+1, (meses / 12));
+        DecimalFormat df = new DecimalFormat("#.##");
         System.out.println("Capital final: " + df.format(capital));
     }
 }
