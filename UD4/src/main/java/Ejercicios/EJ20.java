@@ -1,7 +1,6 @@
 package Ejercicios;
 
 import java.text.DecimalFormat;
-import java.util.Formatter;
 import java.util.Scanner;
 
 public class EJ20 {
