@@ -27,7 +27,11 @@ public class prueba_Matematicas {
             System.out.println("Indique el segundo número: ");
             num2 = reader.nextInt();
 
-            if (operacion == 1) {
+            if (operacion == 4 && num2 == 0) {
+                System.out.println("División no valida.");
+                System.out.println("Finalizando programa.");
+            }
+            else if (operacion == 1) {
                 Object suma = num1 + num2;
                 System.out.println(suma);
             } else if (operacion == 2) {
@@ -40,6 +44,7 @@ public class prueba_Matematicas {
                 Object division = num1 / num2;
                 System.out.println(division);
             }
+
         }
     }
 }

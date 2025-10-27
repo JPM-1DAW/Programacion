@@ -10,7 +10,7 @@ public class EJ1 {
         Scanner sc = new Scanner(System.in);
         segundos = sc.nextInt();
         dias = segundos / segDia;
-        horas = segDia / (dias / (60 * 24));
+        horas = segDia / (dias * 60);
         minutos = horas / 60;
         segundos = minutos / 60;
         System.out.println("Equivalen a: " + dias + " dias, " + horas + " horas, " + minutos + " minutos y " + segundos + " segundos");
