@@ -15,7 +15,7 @@ public class EJ2 {
         double pMin = Math.min(precio1, precio2);
         double diferencia = pMax - pMin;
         System.out.printf("Precio más caro: %.2f%n", precio1);
-        System.out.printf("Precio más barato:  %.2f%n", precio2);
+        System.out.printf("Precio más barato: %.2f%n", precio2);
         System.out.printf("Diferencia: %.2f", diferencia);
     }
 }
