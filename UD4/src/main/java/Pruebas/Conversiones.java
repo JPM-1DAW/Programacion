@@ -47,7 +47,7 @@ public class Conversiones {
         int n11 = Integer.parseInt(n1);
 
         String n2 = "23.78";
-        Float n22 = Float.parseFloat(n2);
+        float n22 = Float.parseFloat(n2);
         System.out.println("Ejemplos parseInt: " + n11 + " y parseFloat: " + n22);
     }
 }
