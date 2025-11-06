@@ -20,7 +20,7 @@ public class EJ15 {
             {
                 System.out.println("Se le aplicara un recargo por enivo de 5€");
             }
-        else if (precio >= 50 &&  precio < 100)
+        else if (precio >= 50 &&  precio <= 100)
             {
                 System.out.println("Se le aplicara un descuento del 10%");
             }
