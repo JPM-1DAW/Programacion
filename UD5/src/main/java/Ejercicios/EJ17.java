@@ -1,5 +1,6 @@
 package Ejercicios;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class EJ17 {
@@ -17,31 +18,35 @@ public class EJ17 {
         //Segundos
         char s1 = hora.charAt(6);
         char s2 = hora.charAt(7);
-        String hora1 = String.valueOf(h1 + h2);
-        String min1 = String.valueOf(m1 + m2);
-        String seg1 = String.valueOf(s1 + s2);
-        int horas = Integer.parseInt(hora1);
-        int minutos = Integer.parseInt(min1);
-        int segundos = Integer.parseInt(seg1);
+        String hora1 = String.valueOf(h1);
+        String hora2 = String.valueOf(h2);
+        String min1 = String.valueOf(m1);
+        String min2 = String.valueOf(m2);
+        String seg1 = String.valueOf(s1);
+        String seg2 = String.valueOf(s2);
+        int horas = Integer.parseInt(hora1 +  hora2);
+        int minutos = Integer.parseInt(min1 + min2);
+        int segundos = Integer.parseInt(seg1 + seg2);
         segundos = segundos + 1;
-        if (segundos < 59) {
-            System.out.println(horas + ":" + minutos + ":" + segundos);
+        DecimalFormat df = new DecimalFormat("00");
+        if (segundos <= 59) {
+            System.out.println(df.format(horas) + ":" + df.format(minutos) + ":" + df.format(segundos));
         }
         else {
             segundos = 0;
             minutos = minutos +1;
-            if  (minutos < 59) {
-                System.out.println(horas + ":" + minutos + ":" + segundos);
+            if  (minutos <= 59) {
+                System.out.println(df.format(horas) + ":" + df.format(minutos) + ":" + df.format(segundos));
             }
             else {
                 minutos = 0;
                 horas = horas +1;
-                if (horas < 23) {
-                    System.out.println(horas + ":" + minutos + ":" + segundos);
+                if (horas <= 23) {
+                    System.out.println(df.format(horas) + ":" + df.format(minutos) + ":" + df.format(segundos));
                 }
                 else {
                     horas = 0;
-                    System.out.println(horas + ":" + minutos + ":" + segundos);
+                    System.out.println(df.format(horas) + ":" + df.format(minutos) + ":" + df.format(segundos));
                 }
             }
         }
