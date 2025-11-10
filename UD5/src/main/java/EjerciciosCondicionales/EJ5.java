@@ -1,4 +1,4 @@
-package Ejercicios;
+package EjerciciosCondicionales;
 
 import java.sql.SQLOutput;
 import java.util.Scanner;

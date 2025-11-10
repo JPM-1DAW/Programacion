@@ -1,4 +1,4 @@
-package Ejercicios;
+package EjerciciosCondicionales;
 
 import java.text.DecimalFormat;
 import java.util.Formatter;
