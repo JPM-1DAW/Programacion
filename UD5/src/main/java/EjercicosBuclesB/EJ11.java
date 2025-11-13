@@ -8,6 +8,7 @@ public class EJ11 {
         String ANSI_RED = "\u001B[31m";
         int num;
         int numComp = 0;
+        int numUsados = 0;
         int cont = 1;
         int errores = 0;
         do {
@@ -19,9 +20,15 @@ public class EJ11 {
                 }
                 else {
                     errores++;
-                    System.out.println(ANSI_RED + "Fallos");
+                    System.out.println(ANSI_RED + "Fallo! Errores: " + errores);
                 }
+                numComp = num;
+                numUsados++;
             }
-        } while (num == 0);
+        } while (num != 0);
+        System.out.println("----------------------------------");
+        System.out.println("Total de números introducidos: " + numUsados);
+        System.out.println("Total de números válidos: " + cont);
+        System.out.println("Total de fallos: " + errores);
     }
 }
