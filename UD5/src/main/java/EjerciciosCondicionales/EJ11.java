@@ -26,7 +26,7 @@ public class EJ11 {
                     System.out.println(df.format(temp) + " grados Celsius son " + df.format(conversion) + " grados Fahrenheit");
                     break;
                 case 2:
-                    conversion = (temp - 32) * (5 / 9); //La división 5 / 9 no es entera
+                    conversion = (temp - 32) * ((double) 5 / 9); //La división 5 / 9 no es entera
                     System.out.println(df.format(temp) + " grados Fahrenheit son " + df.format(conversion) + " grados Celsius");
                     break;
                 case 3:
