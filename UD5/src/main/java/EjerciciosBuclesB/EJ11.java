@@ -8,10 +8,6 @@ public class EJ11 {
         int num;
         int cont = 1;
         int errores;
-        do {
-            System.out.println("Número " + cont + ": ");
-            num = sc.nextInt();
-            if (num != 0 && num) {}
-        } while (num == 0);
+        System.out.println("Número " + cont + ": ");
     }
 }
