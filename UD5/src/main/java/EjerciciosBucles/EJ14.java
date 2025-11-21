@@ -1,9 +1,9 @@
-package EjerciciosBuclesA;
+package EjerciciosBucles;
 
 import java.util.Scanner;
 
 public class EJ14 {
-    static void main() {
+    public static void main() {
         Scanner sc = new Scanner(System.in);
         int euros;
         int b500, b200, b100, b50, b20, b10, b5;
