@@ -23,7 +23,7 @@ public class usoMath {
         System.out.println("9 % 4 = " +Math.floorMod(9, 4));
 
         //Números aeatorios
-        System.out.println("Numero aleatorio (0, 1): " +Math.random());
+        System.out.println("Numero aleatorio (0, 1): " + Math.random());
         System.out.println("Numero aleatorio (1, 10): " + (1 + (int) (Math.random() * 10)));
 
         //Trigonometria (en radiantes)
