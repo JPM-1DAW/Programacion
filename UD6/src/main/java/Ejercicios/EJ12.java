@@ -17,6 +17,7 @@ public class EJ12 {
                     "b. Introducir valores\n" +
                     "c. Salir\n");
             System.out.print("Selecciona una opcion: ");
+            sc.nextLine(); // Limpieza del buffer
             opcion = sc.nextLine();
             if (opcion.equalsIgnoreCase("a")) {
                 System.out.println(Arrays.toString(numeros));
