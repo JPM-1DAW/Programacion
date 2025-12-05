@@ -31,7 +31,7 @@ public class EJ15 {
             minutos = Integer.parseInt(min1 + min2);
             segundos = Integer.parseInt(seg1 + seg2);
             if (horas > 23 || minutos > 59 || segundos > 59) {
-                System.out.print(ANSI_RED + "Formato incorrecto, vuelve a introducirla" + ANSI_RESET);
+                System.out.print(ANSI_RED + "Formato incorrecto, " + ANSI_RESET + "vuelve a introducirla: ");
             }
         } while (horas > 23 || minutos > 59 || segundos > 59);
         DecimalFormat df = new DecimalFormat("00");
